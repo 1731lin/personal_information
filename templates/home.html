@@ -1,4 +1,6 @@
 <h1>这是主页</h1>
 {% for g in gal1.all %}
 {{ g.description }}	
+<img src="{{ g.imge.url }}">
+
 {% endfor %}
