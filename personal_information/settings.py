@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #我的APP·
-    'gallery.apps.GalleryConfig'
+    'gallery.apps.GalleryConfig',
+    'blog',
 ]
 
 MIDDLEWARE = [
