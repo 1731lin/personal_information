@@ -8,7 +8,10 @@ class Blog(models.Model):
 	image = models.ImageField(default='default.png',upload_to='imges/')
 	text = models.TextField(default='文章正文')
 	def __str__(self) :
-		 return self.title
+		return self.title
+
+	def short_text(self):
+		return self.text[:60]+'...'
 
 
    	
